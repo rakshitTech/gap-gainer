@@ -23,4 +23,4 @@ app.listen(PORT, () => {
 var pgsql = require("./routes/pgsql");
 
 app.get('/', (req, res) => res.send("cool"))
-app.get('/db', pgsql.getTestTable());
+app.get('/db', pgsql.getTestTable);
