@@ -1,0 +1,25 @@
+{
+  "name": "gap-gainer",
+  "version": "1.0.0",
+  "description": "eat gaps",
+  "engines": {
+    "node": "8.9.1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.15.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rakshitTech/gap-gainer.git"
+  },
+  "author": "rakshit yadav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rakshitTech/gap-gainer/issues"
+  },
+  "homepage": "https://github.com/rakshitTech/gap-gainer#readme"
+}
