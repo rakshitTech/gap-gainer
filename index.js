@@ -8,12 +8,6 @@ const app = express()
 app.use(express.static(path.join(__dirname, 'public')))
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
-
-var pgsql = require("./routes/pgsql");
-
-app.get('/', (req, res) => res.send("cool"))
-app.get('/db', pgsql.getTestTable());
-
 db = null;
 app.listen(PORT, () => {
     console.log(`GAP-GAINER Listening on ${ PORT }`)
@@ -25,3 +19,8 @@ app.listen(PORT, () => {
         }
     })
 })
+
+var pgsql = require("./routes/pgsql");
+
+app.get('/', (req, res) => res.send("cool"))
+app.get('/db', pgsql.getTestTable());
