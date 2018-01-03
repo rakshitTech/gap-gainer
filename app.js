@@ -20,7 +20,9 @@ app.listen(PORT, () => {
     })
 })
 
-var pgsql = require("./routes/pgsql");
+var postgre = require("./routes/postgre");
+var crypto  = require("./routes/cryptocurrency");
 
 app.get('/', (req, res) => res.send("cool"))
-app.get('/db', pgsql.getTestTable);
+app.get('/db', postgre.getTestTable)
+app.get('/get_current_rate', crypto.getCurrentRate)
