@@ -6,7 +6,9 @@ var constants = require("./constants");
 exports.getCurrentRate = getCurrentRate;
 
 function getCurrentRate (req, res) {
-    needle("get", constants.externalFixedApis.koinex_ticker).
+    needle(
+        constants.externalFixedApis.koinex_ticker.method,
+        constants.externalFixedApis.koinex_ticker.url).
         then(resp => {
             console.log("koinex body " + resp.body);
             return res.send("done")
