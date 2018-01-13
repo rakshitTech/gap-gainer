@@ -1,28 +1,27 @@
-const express = require("express")
-const pg = require("pg")
-const path = require('path')
-const PORT = process.env.PORT || 5000
+const express = require('express');
+const path = require('path');
+const fs = require('fs');
+const moment = require('moment');
+const expressLogger = require('express-pino-logger')(fs.createWriteStream(`./logs/express_${moment().format('YYYYMMDD')}.log`, { flags: 'a' }));
 
-const app = express()
+const app = express();
+const PORT = process.env.PORT || 5000;
 
-app.use(express.static(path.join(__dirname, 'public')))
-app.set('views', path.join(__dirname, 'views'))
-app.set('view engine', 'ejs')
-db = null;
+const postgre = require('./models/postgre');
+const logger = require('./models/logger');
+
+app.use(express.static(path.join(__dirname, 'public')));
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
+app.use(expressLogger);
+app.use(require('./controllers/index'));
+
 app.listen(PORT, () => {
-    console.log(`GAP-GAINER Listening on ${ PORT }`)
-    pg.connect(process.env.DATABASE_URL, function(err, client, done) {
-        if (err) {
-            console.error(err); response.send("Error " + err);
-        } else {
-            db = client;
-        }
-    })
-})
+    logger.info(`GAP-GAINER Listening on ${PORT}`);
+    postgre.connectToPostgreSql();
+});
 
-var postgre = require("./routes/postgre");
-var crypto  = require("./routes/cryptocurrency");
-
-app.get('/', (req, res) => res.send("cool"))
-app.get('/db', postgre.getTestTable)
-app.get('/get_current_rate', crypto.getCurrentRate)
+app.get('/', (req, res) => {
+    console.log(Object.keys(req.connection));
+    return res.send('cool')
+});
