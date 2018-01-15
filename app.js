@@ -20,4 +20,6 @@ app.listen(PORT, () => {
 });
 
 app.get('/', (req, res) => res.send('cool'));
-app.get('/index', (req, res) => res.sendFile(`${__dirname}/views/memory_game/index.html`));
+app.get('/memory_game', (req, res) => res.sendFile(`${__dirname}/views/memory_game/index.html`));
+app.get('/memory_game_style', (req, res) => res.sendFile(`${__dirname}/views/memory_game/style.css`));
+app.get('/memory_game_js', (req, res) => res.sendFile(`${__dirname}/views/memory_game/app.js`));
