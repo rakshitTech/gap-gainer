@@ -1,8 +1,6 @@
 const express = require('express');
 const path = require('path');
-const fs = require('fs');
-const moment = require('moment');
-const expressLogger = require('express-pino-logger')(fs.createWriteStream(`${__dirname}/logs/express_${moment().format('YYYYMMDD')}.log`, { flags: 'a' }));
+const expressLogger = require('express-pino-logger')();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -22,4 +20,4 @@ app.listen(PORT, () => {
 });
 
 app.get('/', (req, res) => res.send('cool'));
-app.get('/index', (req, res) => res.sendFile(__dirname + '/views/memory_game/index.html'));
+app.get('/index', (req, res) => res.sendFile(`${__dirname}/views/memory_game/index.html`));

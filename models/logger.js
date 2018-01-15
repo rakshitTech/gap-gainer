@@ -1,8 +1,6 @@
-const fs = require('fs');
-const moment = require('moment');
 const pino = require('pino');
 
-let logger = null;
+const logger = pino();
 
 // pino log levels in-order
 // 'fatal'
@@ -13,10 +11,8 @@ let logger = null;
 // 'trace'
 
 if (process.env.NODE_ENV == 'production') {
-    logger = pino(fs.createWriteStream(`./logs/app_${moment().format('YYYYMMDD')}.log`, { flags: 'a' }));
     logger.level = 'warn';
 } else {
-    logger = pino();
     logger.level = 'trace';
 }
 
