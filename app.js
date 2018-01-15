@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const fs = require('fs');
 const moment = require('moment');
-const expressLogger = require('express-pino-logger')(fs.createWriteStream(`./logs/express_${moment().format('YYYYMMDD')}.log`, { flags: 'a' }));
+const expressLogger = require('express-pino-logger')(fs.createWriteStream(`${__dirname}/logs/express_${moment().format('YYYYMMDD')}.log`, { flags: 'a' }));
 
 const app = express();
 const PORT = process.env.PORT || 5000;
