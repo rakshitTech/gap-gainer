@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dff7bdcf-1505-4a32-bc94-78f913b5ab55" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.eslintignore" afterPath="$PROJECT_DIR$/.eslintignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/logger.js" afterPath="$PROJECT_DIR$/models/logger.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/memory_game/app.js" afterPath="$PROJECT_DIR$/views/memory_game/app.js" />
     </list>
     <ignored path="gap-gainer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,8 +26,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+            <state relative-caret-position="342">
+              <caret line="18" column="62" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -40,8 +36,8 @@
       <file leaf-file-name="postgre.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/postgre.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="95">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -294,12 +290,12 @@
       <workItem from="1515478964452" duration="19405000" />
       <workItem from="1515821926351" duration="290000" />
       <workItem from="1516027726079" duration="15000" />
-      <workItem from="1516029206343" duration="611000" />
+      <workItem from="1516029206343" duration="979000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34160000" />
+    <option name="totallyTimeSpent" value="34528000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -515,14 +511,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/logs/express_20180110.log" />
-    <entry file="file://$PROJECT_DIR$/models/postgre.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.eslintignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -539,10 +527,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/models/postgre.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+        <state relative-caret-position="342">
+          <caret line="18" column="62" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
           <folding />
         </state>
       </provider>

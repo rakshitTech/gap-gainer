@@ -16,7 +16,7 @@ app.use(require('./controllers/index'));
 
 app.listen(PORT, () => {
     logger.info(`GAP-GAINER Listening on ${PORT}`);
-    postgre.connectToPostgreSql();
+    postgre.connectToPostgreSql().catch(e => logger.error(e));
 });
 
 app.get('/', (req, res) => res.send('cool'));
