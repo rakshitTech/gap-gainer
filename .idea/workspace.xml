@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dff7bdcf-1505-4a32-bc94-78f913b5ab55" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/logger.js" afterPath="$PROJECT_DIR$/models/logger.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/postgre.js" afterPath="$PROJECT_DIR$/models/postgre.js" />
     </list>
     <ignored path="gap-gainer.iws" />
@@ -44,17 +43,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="postgre.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="postgre.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/models/postgre.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="60" selection-start-line="4" selection-start-column="60" selection-end-line="4" selection-end-column="60" />
+            <state relative-caret-position="95">
+              <caret line="5" column="91" selection-start-line="5" selection-start-column="91" selection-end-line="5" selection-end-column="91" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="logger.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="logger.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/logger.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="266">
@@ -98,8 +97,8 @@
         <option value="$PROJECT_DIR$/.eslintignore" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/views/memory_game/index.html" />
-        <option value="$PROJECT_DIR$/models/postgre.js" />
         <option value="$PROJECT_DIR$/models/logger.js" />
+        <option value="$PROJECT_DIR$/models/postgre.js" />
       </list>
     </option>
   </component>
@@ -302,12 +301,12 @@
       <workItem from="1515478964452" duration="19405000" />
       <workItem from="1515821926351" duration="290000" />
       <workItem from="1516027726079" duration="15000" />
-      <workItem from="1516029206343" duration="1933000" />
+      <workItem from="1516029206343" duration="2043000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35482000" />
+    <option name="totallyTimeSpent" value="35592000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -549,18 +548,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/postgre.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="60" selection-start-line="4" selection-start-column="60" selection-end-line="4" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/logger.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/postgre.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="91" selection-start-line="5" selection-start-column="91" selection-end-line="5" selection-end-column="91" />
           <folding />
         </state>
       </provider>
