@@ -2,7 +2,8 @@ const pg = require('pg');
 const logger = require('./logger');
 
 async function connectToPostgreSql() {
-    const client = await new pg.Pool().connect();
+    logger.info({"DATABASE_URL": process.env.DATABASE_URL});
+    const client = await new pg.Pool().connect(process.env.DATABASE_URL);
 
     if (client) {
         logger.info('POSTGRE connected...');

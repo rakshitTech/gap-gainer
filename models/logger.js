@@ -11,10 +11,10 @@ const logger = pino();
 // 'trace'
 
 if (process.env.NODE_ENV == 'production') {
-    logger.level = 'warn';
+    logger.level = 'trace';
 } else {
     logger.level = 'trace';
 }
 
-// logger.info('PINO loaded');
+logger.info('PINO loaded');
 module.exports = logger;
