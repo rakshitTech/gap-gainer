@@ -21,7 +21,6 @@ app.listen(PORT, () => {
     postgre.connectToPostgreSql();
 });
 
-app.get('/', (req, res) => {
-    console.log(Object.keys(req.connection));
-    return res.send('cool')
-});
+app.get('/', (req, res) => res.send('cool'));
+
+app.get('/index', (req, res) => res.sendFile(__dirname + '/memory_game/index.html'));
