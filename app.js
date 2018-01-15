@@ -22,3 +22,5 @@ app.listen(PORT, () => {
 });
 
 app.get('/', (req, res) => res.send('cool'));
+
+app.get('/index', (req, res) => res.sendFile(__dirname + '/memory_game/index.html'));
